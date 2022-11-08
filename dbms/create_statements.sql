@@ -27,7 +27,7 @@ CREATE TABLE student (
     current_status VARCHAR(10) NOT NULL, 
     course_enrolled VARCHAR(40) NOT NULL, 
     advisor_id NUMBER(9) CHECK (advisor_id > 0) NOT NULL, 
-    place_num NUMBER(5) CHECK (place_num > 0) NOT NULL 
+    place_num VARCHAR(5) CHECK (place_num LIKE 'H%' OR place_num LIKE 'F%') NOT NULL 
 );
 
 CREATE TABLE student_advisor ( 
@@ -45,18 +45,19 @@ CREATE TABLE residence_hall (
     hall_addr VARCHAR(40) NOT NULL, 
     hall_tele_num NUMBER(10) CHECK (hall_tele_num > 999999999) NOT NULL, 
     hallmanager VARCHAR(40) NOT NULL, 
-    place_num NUMBER(5) CHECK (place_num > 0) NOT NULL 
+    place_num VARCHAR(5) CHECK (place_num LIKE 'H%' ) NOT NULL
 );
 
 CREATE TABLE student_flat ( 
     flat_num NUMBER(3) CHECK (flat_num > 0) PRIMARY KEY, 
     flat_addr VARCHAR(40) NOT NULL, 
     single_beds_available NUMBER(3) CHECK (single_beds_available > 0) NOT NULL, 
-    place_num NUMBER(5) CHECK (place_num > 0) NOT NULL 
+   place_num VARCHAR(5) CHECK ( place_num LIKE 'F%') NOT NULL
 );
 
 CREATE TABLE room ( 
-    place_num NUMBER(5) CHECK (place_num > 0) PRIMARY KEY, 
+    place_num VARCHAR(5) CHECK (place_num LIKE 'H%' OR place_num LIKE 'F%') PRIMARY KEY,
+    -- place_num NUMBER(5) CHECK (place_num > 0) PRIMARY KEY, 
     room_num NUMBER(3) CHECK (room_num > 0) NOT NULL, 
     monthly_rent NUMBER(6, 2) CHECK (monthly_rent > 0) NOT NULL 
 );
@@ -66,7 +67,7 @@ CREATE TABLE leases (
     rental_term NUMBER CHECK (rental_term > 0 AND rental_term < 4) NOT NULL, 
     move_in DATE NOT NULL, 
     move_out DATE NOT NULL, 
-    place_num NUMBER(5) CHECK (place_num > 0) NOT NULL, 
+ place_num VARCHAR(5) CHECK (place_num LIKE 'H%' OR place_num LIKE 'F%') NOT NULL,
     std_id NUMBER(9) CHECK (std_id > 0) NOT NULL 
 );
 
@@ -76,7 +77,7 @@ CREATE TABLE invoices (
     payment_id NUMBER(9) CHECK (payment_id > 0) NOT NULL, 
     lease_num NUMBER(9) CHECK (lease_num > 0) NOT NULL, 
     std_id NUMBER(9) CHECK (std_id > 0) NOT NULL, 
-    place_num NUMBER(5) CHECK (place_num > 0) NOT NULL 
+   place_num VARCHAR(5) CHECK (place_num LIKE 'H%' OR place_num LIKE 'F%') NOT NULL
 );
 
 CREATE TABLE py_invoices ( 
@@ -91,7 +92,7 @@ CREATE TABLE flat_inspections (
     inspection_date DATE NOT NULL, 
     satisfactory VARCHAR(100) NOT NULL, 
     comments VARCHAR(100) DEFAULT 'No comments', 
-    place_num NUMBER(5) CHECK (place_num > 0) NOT NULL, 
+    place_num VARCHAR(5) CHECK (place_num LIKE 'F%') NOT NULL,
     flat_num NUMBER(3) CHECK (flat_num > 0) NOT NULL, 
     staff_num NUMBER(9) CHECK (staff_num > 0) NOT NULL 
 );
@@ -107,5 +108,5 @@ CREATE TABLE hostel_staff (
     street VARCHAR(20) NOT NULL, 
     postalcode VARCHAR(7) NOT NULL, 
     city VARCHAR(20) NOT NULL, 
-    place_num NUMBER(5) CHECK (place_num > 0) NOT NULL 
+     place_num VARCHAR(5) CHECK (place_num LIKE 'H%' OR place_num LIKE 'F%') NOT NULL
 );
