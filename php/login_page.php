@@ -276,6 +276,8 @@
           </div>
 
           <div class="container">
+          <label for="uname"><b>Student ID</b></label>
+            <input type="text" placeholder="Enter Student Id" name="std_id" required />
             <label for="uname"><b>Username</b></label>
             <input type="text" placeholder="Enter Username" name="uname" required />
 
@@ -323,6 +325,8 @@
           </div>
 
           <div class="container">
+          <label for="uname"><b>Staff ID</b></label>
+            <input type="text" placeholder="Enter Staff Id" name="staff_num" required />
             <label for="uname"><b>Username</b></label>
             <input type="text" placeholder="Enter Username" name="uname" required />
 

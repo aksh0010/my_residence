@@ -10,18 +10,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $conn = mysqli_connect($host, $user, $pwd, $db);
     // echo "hello";
-
+    $id=$_POST['staff_num'];
     $username = $_POST['uname'];
     $userpwd = $_POST['psw'];
 
 
 
-    $query = "SELECT * FROM staff_login WHERE USERNAME='$username' AND PASSWORD = '$userpwd'";
+    $query = "SELECT * FROM staff_login WHERE STAFF_NUM='$id' AND USERNAME='$username' AND PASSWORD = '$userpwd'";
     $result = mysqli_query($conn, $query);
 
     if (mysqli_num_rows($result) == 1) {
         session_start();
         $_SESSION['my_residence'] = 'true';
+        $_SESSION['staff_num'] = $id;
         header("location:staff_home.php");
     } else {
 
