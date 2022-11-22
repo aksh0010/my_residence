@@ -1,11 +1,117 @@
+
+
+.container {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: #04aa6d;
+    margin-bottom: 30px;
+  }
+
+  /*container that extends other container with a diffretn background color*/
+  .container2 {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #17735a;
+  }
+  .navbar-custom {
+    background-color: #17735a;
+  }
+  .footer-basic {
+    margin-top: 30px;
+    padding:40px 0;
+    background-color:#17735a;
+  }
+
+  .footer-basic ul {
+    color:000000;
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+
+  .footer-basic li {
+    color:000000;
+    padding:0 10px;
+  }
+
+  .footer-basic ul a {
+    color:000000;
+    text-decoration:none;
+    opacity:0.8;
+  }
+
+  .footer-basic ul a:hover {
+    opacity:1;
+    color:000000;
+  }
+
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+    color:000000;
+  }
+
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:000000;
+    opacity:0.75;
+  }
+
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+    color:000000;
+  }
+
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    margin-bottom:0;
+    color:000000;
+  }
+
+  .text-center{
+    padding:15px;
+  }
+  .text-center2{
+    padding:15px;
+    font-style: italic;
+    font-size: 20px;
+    text-align:center;
+  }
+  .img-fluid{
+    size: 120%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    border: 2px solid black;
+    border-radius:47%;
+  }
+
 body {
     
     /* background: url(../images/charity.jpg); */
 
         background-image: url("../img/img1.jpg");
-        padding: 5px;
-        /* border: 2px solid black; */
         background-repeat: no-repeat;
+        /* border: 2px solid black; */
         background-attachment: fixed;
         background-size: 100%;
     
@@ -82,13 +188,10 @@ background-size: 90% 150%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 3.25rem;
     font-weight: bold;
-    line-height: 3.25rem;
-    margin-bottom: 2rem; 
+    line-height: 3.25rem; 
     color: #8dca79;
+    text-align: center;
 }
-
-
-
 .team-image-here2 {
     /* float: right; */
     border: black;
@@ -125,7 +228,7 @@ background-size: 90% 150%;
     flex-basis: 200px;
     align-content: center;
     text-align: center;
-
+    justify-content: center;
 }
 
 .team-content-here {
@@ -145,7 +248,6 @@ background-size: 90% 150%;
     background-color:red;
     width: 30%;
 }
-
 
 #sidebar {
     width: 200px;
