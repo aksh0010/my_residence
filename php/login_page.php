@@ -168,29 +168,43 @@
 </style>
 
 <body class="body-bg">
-  <!-- !! Div for navigation bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">My Residence</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.php">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./login_page.php">Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About us </a>
-          </li>
-        </ul>
-      </div>
+    <!-- !! Div for navigation bar -->
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">My Residence</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.php"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./login_page.php">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about_us.html">About us </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
-  </nav>
-  </div>
   <!-- !!  Div for the rest of the content  -->
   <!-- !!  My Residence Login  -->
   <div class="list-group ">
@@ -232,7 +246,7 @@
             <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">
               Cancel
             </button>
-            <span class="psw">Forgot <a href="#">password?</a></span>
+            <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
           </div>
         </form>
       </div>
@@ -279,7 +293,7 @@
             <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">
               Cancel
             </button>
-            <span class="psw">Forgot <a href="#">password?</a></span>
+            <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
           </div>
         </form>
       </div>
@@ -326,7 +340,7 @@
             <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">
               Cancel
             </button>
-            <span class="psw">Forgot <a href="#">password?</a></span>
+            <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
           </div>
         </form>
       </div>
