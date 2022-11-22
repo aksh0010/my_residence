@@ -211,7 +211,7 @@
           <!-- action="/admin_login.php" -->
           <div class="imgcontainer">
             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <img src="img_avatar2.png" alt="Avatar" class="avatar" />
+            <img src="./img/admin.png" alt="Avatar" class="avatar" />
           </div>
 
           <div class="container">
@@ -258,7 +258,7 @@
         <form class="modal-content animate" action="./student_auth.php" method="POST">
           <div class="imgcontainer">
             <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <img src="img_avatar2.png" alt="Avatar" class="avatar" />
+            <img src="./img/student.png" alt="Avatar" class="avatar" />
           </div>
 
           <div class="container">
@@ -305,7 +305,7 @@
         <form class="modal-content animate" action="./staff_auth.php" method="POST">
           <div class="imgcontainer">
             <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <img src="img_avatar2.png" alt="Avatar" class="avatar" />
+            <img src="./img/staff.png" alt="Avatar" class="avatar" />
           </div>
 
           <div class="container">
@@ -344,7 +344,7 @@
       </script>
     </a>
     <!-- !! Back to home page  -->
-    <a href="./home.html" class="list-group-item list-group-item-action">Sign up?</a>
+   
   </div>
   </div>
 </body>
