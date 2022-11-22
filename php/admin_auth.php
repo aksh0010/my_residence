@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $db="my_residence";
     
     $conn = mysqli_connect($host,$user,$pwd,$db);
-    // echo "hello";
+
 
     $username = $_POST['uname'];
     $userpwd = $_POST['psw'];
