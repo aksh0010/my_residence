@@ -180,7 +180,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./home1.html">Home</a>
+                  <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./login_home.html">Login</a>
@@ -219,7 +219,7 @@
           <div id="id01" class="modal">
             <form
               class="modal-content animate"
-              action="/action_page.php"
+              action="confirm_login_data.php"
               method="post"
             >
               <div class="imgcontainer">
@@ -233,19 +233,21 @@
               </div>
 
               <div class="container">
-                <label for="uname"><b>Username</b></label>
+                <label for="usernameAdmin"><b>Username</b></label>
                 <input
                   type="text"
                   placeholder="Enter Username"
-                  name="uname"
+                  id="uname"
+                  name="usernameAdmin"
                   required
                 />
 
-                <label for="psw"><b>Password</b></label>
+                <label for="passwordAdmin"><b>Password</b></label>
                 <input
                   type="password"
                   placeholder="Enter Password"
-                  name="psw"
+                  id = "psw"
+                  name="passwordAdmin"
                   required
                 />
 
@@ -293,7 +295,7 @@
           <div id="id01" class="modal">
             <form
               class="modal-content animate"
-              action="/action_page.php"
+              action="confirm_login_data.php"
               method="post"
             >
               <div class="imgcontainer">
@@ -307,19 +309,21 @@
               </div>
 
               <div class="container">
-                <label for="uname"><b>Username</b></label>
+                <label for="usernameStudent"><b>Username</b></label>
                 <input
                   type="text"
                   placeholder="Enter Username"
-                  name="uname"
+                  id="uname"
+                  name="usernameStudent"
                   required
                 />
 
-                <label for="psw"><b>Password</b></label>
+                <label for="passwordStudent"><b>Password</b></label>
                 <input
                   type="password"
                   placeholder="Enter Password"
-                  name="psw"
+                  id="psw"
+                  name="passwordStudent"
                   required
                 />
 
@@ -367,7 +371,7 @@
           <div id="id01" class="modal">
             <form
               class="modal-content animate"
-              action="/action_page.php"
+              action="confirm_login_data.php"
               method="post"
             >
               <div class="imgcontainer">
@@ -381,19 +385,21 @@
               </div>
 
               <div class="container">
-                <label for="uname"><b>Username</b></label>
+                <label for="usernameFaculty"><b>Username</b></label>
                 <input
                   type="text"
                   placeholder="Enter Username"
-                  name="uname"
+                  id="uname"
+                  name="usernameFaculty"
                   required
                 />
 
-                <label for="psw"><b>Password</b></label>
+                <label for="passwordFaculty"><b>Password</b></label>
                 <input
                   type="password"
                   placeholder="Enter Password"
-                  name="psw"
+                  id="psw"
+                  name="passwordFaculty"
                   required
                 />
 
@@ -430,7 +436,7 @@
           </script></a
         >
         <!-- !! Back to home page  -->
-        <a href="./home.html" class="list-group-item list-group-item-action"
+        <a href="./signup.html" class="list-group-item list-group-item-action"
           >Sign up?</a
         > 
       </div>
