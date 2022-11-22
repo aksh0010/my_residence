@@ -309,7 +309,7 @@
       <h1 style="text-align: center">Login to your MyResidence Account</h1>
       <br><br>
       <!-- !!  add above this text-bg-warning p-3 to make it yellow -->
-      <a href="./login_home.php" class="list-group-item list-group-item-action" style="background-color: #6082B6;" aria-current="true">
+      <a href="./login_page.php" class="list-group-item list-group-item-action" style="background-color: #6082B6;" aria-current="true">
         My Residence Login
       </a>
       <!-- !!  Admin Login  -->

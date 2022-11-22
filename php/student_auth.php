@@ -31,6 +31,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Wrong User name or password ! ";
 
 
-        echo "<br><button> <a href='login_home.php'>Login Page</a> </button>";
+        echo "<br><button> <a href='login_page.php'>Login Page</a> </button>";
     }
 }

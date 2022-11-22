@@ -4,9 +4,9 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") { 
 
     $host = "localhost";
-    $user="root";
-    $pwd = "";
-    $db="my_residence";
+    $user="patel4d1_My_residence";
+    $pwd = "12345";
+    $db="patel4d1_My_residence";
     
     $conn = mysqli_connect($host,$user,$pwd,$db);
 
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     if(mysqli_num_rows($result)==1){
         session_start();
-        $_SESSION['my_residence']='true';
+        $_SESSION['patel4d1_My_residence']='true';
         header("location:admin_home.php");  
         
         
@@ -30,8 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         echo "Wrong User name or password ! ";
 
-
-        echo "<br><button> <a href='login_home.php'>Login Page</a> </button>";
+        echo "<br><button> <a href='login_page.php'>Login Page</a> </button>";
     }
     
 }
