@@ -42,7 +42,7 @@
     die("Connection error " . mysqli_connect_error());
   }
   // User information 
-  $sqlq = "SELECT advisor_id, adv_fname, adv_lname, position, dept_name, room_num FROM student_advisor 
+  $sqlq = "SELECT advisor_id, adv_fname, adv_lname, position, dept_name, room_num FROM STUDENT_ADVISOR 
             WHERE advisor_id =" . $id . ";";
   $result = $conn->query($sqlq);
   $num = mysqli_num_rows($result);

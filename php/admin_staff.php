@@ -44,7 +44,7 @@
     die("Connection error " . mysqli_connect_error());
   }
   // User information 
-  $sqlq = "SELECT staff_num, staff_fname, staff_lname, position, place_num FROM hostel_staff 
+  $sqlq = "SELECT staff_num, staff_fname, staff_lname, position, place_num FROM HOSTEL_STAFF 
             WHERE staff_num =" . $id . ";";
   $result = $conn->query($sqlq);
   $num = mysqli_num_rows($result);

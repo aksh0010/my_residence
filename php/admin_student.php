@@ -44,7 +44,7 @@
     die("Connection error " . mysqli_connect_error());
   }
   // User information 
-  $sqlq = "SELECT std_id, std_fname, std_lname, student_category, course_enrolled, place_num FROM student 
+  $sqlq = "SELECT std_id, std_fname, std_lname, student_category, course_enrolled, place_num FROM STUDENT 
             WHERE student.std_id =" . $id . ";";
   $result = $conn->query($sqlq);
   $num = mysqli_num_rows($result);
