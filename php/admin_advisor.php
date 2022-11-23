@@ -31,9 +31,9 @@
   
   <?php
   $host = "localhost";
-  $user = "root";
-  $pwd = "";
-  $db = "my_residence";
+  $user="patel4d1_My_residence";
+  $pwd = "12345";
+  $db="patel4d1_My_residence";
 
   $conn = mysqli_connect($host, $user, $pwd, $db);
 

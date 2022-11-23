@@ -1,9 +1,9 @@
 <?php
 include 'student_auth.php';
 session_start();
-if (!$_SESSION['my_residence'] && !$_SESSION['std_id']) {
+if (!$_SESSION['patel4d1_My_residence'] && !$_SESSION['std_id']) {
 
-  header('location:login_home.php');
+  header('location:login_page.php');
 }
 
 
@@ -42,9 +42,9 @@ if (!$_SESSION['my_residence'] && !$_SESSION['std_id']) {
   
   <?php
   $host = "localhost";
-  $user = "root";
-  $pwd = "";
-  $db = "my_residence";
+  $user="patel4d1_My_residence";
+  $pwd = "12345";
+  $db="patel4d1_My_residence";
 
   $conn = mysqli_connect($host, $user, $pwd, $db);
 

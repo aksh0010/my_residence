@@ -1,7 +1,7 @@
 <?php
 session_start();
-if (!$_SESSION['my_residence']) {
-    header('location:login_home.php');
+if (!$_SESSION['patel4d1_My_residence']) {
+    header('location:login_page.php');
 }
 ?>
 
