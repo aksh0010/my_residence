@@ -27,15 +27,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   //   ('$staff_num','$fname','$lname','$dob','$gender','$position','$loc','$street','$city','$p_code','$place_num')";
   // $query2 = "INSERT INTO `student_login`(`STD_ID`, `username`, `password`) VALUES ('$staff_num','$username','$userpwd')";
 
-  //   $query1 = "INSERT INTO `HOSTEL_STAFF`(`STAFF_NUM`, `STAFF_FNAME`, `STAFF_LNAME`, `DOB`, `GENDER`, `POSITION`, `LOC`, `STREET`, `POSTALCODE`, `CITY`, `PLACE_NUM`) VALUES 
-  //   (".$staff_num. ",".$fname.",".$lname.",".$dob.",".$gender.",".$position.",".$loc.",".$street.",".$city.",". $p_code.",".$place_num.")";
-  // $query2 = "INSERT INTO `student_login`(`STD_ID`, `username`, `password`) VALUES ( ".$staff_num.",".$username.",".$userpwd.")";
+    $query1 = "INSERT INTO HOSTEL_STAFF(STAFF_NUM, STAFF_FNAME, STAFF_LNAME, DOB, GENDER, POSITION, LOC, STREET, POSTALCODE, CITY, PLACE_NUM) VALUES 
+    (".$staff_num. ",".$fname.",".$lname.",".$dob.",".$gender.",".$position.",".$loc.",".$street.",".$city.",". $p_code.",".$place_num.")";
+  $query2 = "INSERT INTO `student_login`(`STD_ID`, `username`, `password`) VALUES ( ".$staff_num.",".$username.",".$userpwd.")";
+  
   // $query = "SELECT * FROM admin_login WHERE USERNAME='$username' AND PASSWORD = '$userpwd'";
 
-
-  $query1 = "INSERT INTO HOSTEL_STAFF(STAFF_NUM, STAFF_FNAME, STAFF_LNAME, DOB, GENDER, POSITION, LOC, STREET, POSTALCODE, CITY, PLACE_NUM) VALUES 
-  ('$staff_num','$fname','$lname','$dob','$gender','$position','$loc','$street','$city','$p_code','$place_num')";
-  $query2 = "INSERT INTO student_login (STD_ID, username, password) VALUES ('$staff_num','$username','$userpwd')";
+  // $query1 = "INSERT INTO HOSTEL_STAFF(STAFF_NUM, STAFF_FNAME, STAFF_LNAME, DOB, GENDER, POSITION, LOC, STREET, POSTALCODE, CITY, PLACE_NUM) VALUES 
+  // ('$staff_num','$fname','$lname','$dob','$gender','$position','$loc','$street','$city','$p_code','$place_num')";
+  // $query2 = "INSERT INTO student_login (STD_ID, username, password) VALUES ('$staff_num','$username','$userpwd')";
 
 
   if (($conn->query($query1) && $conn->query($query2)) == true) {
