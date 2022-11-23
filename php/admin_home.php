@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!$_SESSION['patel4d1_My_residence']) {
-    header('location:login_page.php');
+  header('location:login_page.php');
 }
 ?>
 
@@ -9,13 +9,13 @@ if (!$_SESSION['patel4d1_My_residence']) {
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>admin home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-    <!-- JavaScript Bundle with Popper  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>admin home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <!-- JavaScript Bundle with Popper  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </head>
 <style>
   body {
@@ -161,14 +161,15 @@ if (!$_SESSION['patel4d1_My_residence']) {
     background-size: 100%;
   }
 </style>
+
 <body>
-    <!-- !!  My Residence Login  -->
+  <!-- !!  My Residence Login  -->
   <div class="list-group ">
     <br><br>
     <h1 style="text-align: center">Welcome Admin</h1>
     <br><br>
     <!-- !!  add above this text-bg-warning p-3 to make it yellow -->
-    
+
     <!-- !!  Advisor Login  -->
     <a href="#" class="list-group-item list-group-item-action"><button onclick="document.getElementById('id01').style.display='block'" style="width: auto">
         Advisor
@@ -176,12 +177,12 @@ if (!$_SESSION['patel4d1_My_residence']) {
 
       <div id="id01" class="modal">
         <form class="modal-content animate" action="./admin_advisor.php" method="POST">
-     
+
           <div class="container">
             <label for="uname"><b>Advisor ID</b></label>
             <input type="text" placeholder="Enter Advisor ID" name="id" required />
-     
-            <button type="submit">Go</button>            
+
+            <button type="submit">Go</button>
           </div>
 
           <div class="container" style="background-color: #f1f1f1">
@@ -215,11 +216,11 @@ if (!$_SESSION['patel4d1_My_residence']) {
 
 
           <div class="container">
-          <label for="uname"><b>Student ID</b></label>
+            <label for="uname"><b>Student ID</b></label>
             <input type="text" placeholder="Enter Student Id" name="std_id" required />
-           
+
             <button type="submit">Go</button>
-          
+
           </div>
 
           <div class="container" style="background-color: #f1f1f1">
@@ -250,14 +251,14 @@ if (!$_SESSION['patel4d1_My_residence']) {
 
       <div id="id03" class="modal">
         <form class="modal-content animate" action="./admin_staff.php" method="POST">
-         
+
 
           <div class="container">
-          <label for="uname"><b>Staff ID</b></label>
+            <label for="uname"><b>Staff ID</b></label>
             <input type="text" placeholder="Enter Staff Id" name="staff_num" required />
-           
+
             <button type="submit">Go</button>
-           
+
           </div>
 
           <div class="container" style="background-color: #f1f1f1">
@@ -282,12 +283,14 @@ if (!$_SESSION['patel4d1_My_residence']) {
       </script>
     </a>
     <!-- !! Back to home page  -->
-   
-  </div>
-  </div>
 
-<br>
-    <button class="btn btn-warning" style="text-decoration:none"> <a href="logout.php">Log out</a> </button>
+  </div>
+  </div>
+  <hr>
+  <button class="btn btn-warning" style="text-decoration:none"> <a href="staff_signup.php">Register Staff</a> </button>
+  <br><button class="btn btn-warning" style="text-decoration:none"> <a href="student_signup.php">Register Student</a> </button>
+  <br>
+  <button class="btn btn-warning" style="text-decoration:none"> <a href="logout.php">Log out</a> </button>
 </body>
 
 </html>
