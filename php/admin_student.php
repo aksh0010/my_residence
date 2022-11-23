@@ -45,7 +45,7 @@
   }
   // User information 
   $sqlq = "SELECT std_id, std_fname, std_lname, student_category, course_enrolled, place_num FROM STUDENT 
-            WHERE student.std_id =" . $id . ";";
+            WHERE std_id =" . $id . ";";
   $result = $conn->query($sqlq);
   $num = mysqli_num_rows($result);
   $resArr = array();
@@ -71,7 +71,7 @@ echo"<hr><br> <p> Personal Information</p>";
   echo "</table>";
   // lease agreeement 
   echo"<hr><br><br> <p> Lease Information</p>";
-  $sqlq1 = "SELECT lease_num,rental_term ,move_in,move_out,place_num,std_id FROM `leases` WHERE std_id =" . $id . ";";
+  $sqlq1 = "SELECT lease_num,rental_term ,move_in,move_out,place_num,std_id FROM `LEASES` WHERE std_id =" . $id . ";";
   $result1 = $conn->query($sqlq1);
   $num1 = mysqli_num_rows($result1);
   $resArr1 = array();

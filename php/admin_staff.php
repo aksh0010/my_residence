@@ -70,7 +70,7 @@ echo"<hr><br> <p> Personal Information</p>";
   echo "</table>";
   // Inspection details 
   echo"<hr><br><br> <p> Inspection Information</p>";
-  $sqlq1 = "SELECT inspection_num,inspector_name ,inspection_date,flat_num,place_num,staff_num FROM `flat_inspections` WHERE staff_num =" . $id . ";";
+  $sqlq1 = "SELECT inspection_num,inspector_name ,inspection_date,flat_num,place_num,staff_num FROM `FLAT_INSPECTIONS` WHERE staff_num =" . $id . ";";
   $result1 = $conn->query($sqlq1);
   $num1 = mysqli_num_rows($result1);
   $resArr1 = array();
