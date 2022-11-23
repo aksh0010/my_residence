@@ -4,6 +4,7 @@
 <html lang="en">
 
 <head>
+<link rel="stylesheet" href="../php/css/about-us.css" />
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,12 +31,12 @@
 </head>
 
 <body>
-  
+<div class="container2">
   <?php
- $host = "localhost";
- $user="patel4d1_My_residence";
- $pwd = "12345";
- $db="patel4d1_My_residence";
+  $host = "localhost";
+  $user="patel4d1_My_residence";
+  $pwd = "12345";
+  $db="patel4d1_My_residence";
 
   $conn = mysqli_connect($host, $user, $pwd, $db);
 
@@ -55,6 +56,7 @@
       $resArr[] = $item;
     }
   }
+  echo "<div class='container'>";
 echo "<center class=". "navbar navbar-light bg-light"."> <h1>Account no ".$id ."</h1> 
 </center>";
 echo"<hr><br> <p> Personal Information</p>";
@@ -92,7 +94,7 @@ echo"<hr><br> <p> Personal Information</p>";
       "<td> " . $std1['staff_num'] . " </td></tr>";
   }
   echo "</table><hr>";
-
+  echo"</div>";
 
 
   $conn->close();
@@ -100,7 +102,10 @@ echo"<hr><br> <p> Personal Information</p>";
 
 
   <br>
-  <button class="btn btn-info" style="text-decoration:none"> <a href="admin_home.php">Go back</a> </button>
+
+  <Center> <button class="btn btn-info" style="text-decoration:none"> <a href="admin_home.php">Go back</a> </button></Center>
+
+</div>
 </body>
 
 </html>
