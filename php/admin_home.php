@@ -9,6 +9,7 @@ if (!$_SESSION['patel4d1_My_residence']) {
 <html lang="en">
 
 <head>
+  <link rel="stylesheet" href="../php/css/about-us.css" />
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,6 +43,7 @@ if (!$_SESSION['patel4d1_My_residence']) {
     border: none;
     cursor: pointer;
     width: 100%;
+    radius: 10px;
   }
 
   button:hover {
@@ -163,6 +165,7 @@ if (!$_SESSION['patel4d1_My_residence']) {
 </style>
 
 <body>
+<div class='container'>
   <!-- !!  My Residence Login  -->
   <div class="list-group ">
     <br><br>
@@ -171,10 +174,11 @@ if (!$_SESSION['patel4d1_My_residence']) {
     <!-- !!  add above this text-bg-warning p-3 to make it yellow -->
 
     <!-- !!  Advisor Login  -->
+    <div class= "container2">
     <a href="#" class="list-group-item list-group-item-action"><button onclick="document.getElementById('id01').style.display='block'" style="width: auto">
         Advisor
       </button>
-
+      
       <div id="id01" class="modal">
         <form class="modal-content animate" action="./admin_advisor.php" method="POST">
 
@@ -193,7 +197,7 @@ if (!$_SESSION['patel4d1_My_residence']) {
           </div>
         </form>
       </div>
-
+      
       <script>
         // Get the modal
         var modal = document.getElementById("id01");
@@ -206,7 +210,10 @@ if (!$_SESSION['patel4d1_My_residence']) {
         };
       </script>
     </a>
+    </div>
     <!-- !!  Student Login  -->
+    <br>
+    <div class= "container2">
     <a href="#" class="list-group-item list-group-item-action"><button onclick="document.getElementById('id02').style.display='block'" style="width: auto">
         Student
       </button>
@@ -244,6 +251,9 @@ if (!$_SESSION['patel4d1_My_residence']) {
         };
       </script>
     </a>
+    </div>
+    <br>
+    <div class= "container2">
     <a href="#" class="list-group-item list-group-item-action"><button onclick="document.getElementById('id03').style.display='block'" style="width: auto">
         <!-- !!  Staff Login  -->
         Staff
@@ -282,15 +292,19 @@ if (!$_SESSION['patel4d1_My_residence']) {
         };
       </script>
     </a>
+    </div>
+    <br>
     <!-- !! Back to home page  -->
 
-  </div>
   </div>
   <!-- <hr>
   <button class="btn btn-warning" style="text-decoration:none"> <a href="staff_signup.php">Register Staff</a> </button>
   <br><button class="btn btn-warning" style="text-decoration:none"> <a href="student_signup.php">Register Student</a> </button>
   <br> -->
-  <br><button class="btn btn-warning" style="text-decoration:none"> <a href="logout.php">Log out</a> </button>
+  
+  <Center><button class="btn btn-warning" style="text-decoration:none"> <a href="logout.php">Log out</a> </button></Center>
+
+</div>
 </body>
 
 </html>

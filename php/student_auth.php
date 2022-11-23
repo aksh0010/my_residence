@@ -7,7 +7,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user="patel4d1_My_residence";
     $pwd = "12345";
     $db="patel4d1_My_residence";
-
     $conn = mysqli_connect($host, $user, $pwd, $db);
     // echo "hello";
 
