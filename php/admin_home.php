@@ -299,7 +299,7 @@ if (!$_SESSION['patel4d1_My_residence']) {
   </div>
   <hr>
   <button class="btn btn-warning" style="text-decoration:none"> <a href="staff_signup.html">Register Staff</a> </button>
-  <br><button class="btn btn-warning" style="text-decoration:none"> <a href="student_signup.php">Register Student</a> </button>
+  <br><button class="btn btn-warning" style="text-decoration:none"> <a href="student_signup.html">Register Student</a> </button>
   <br>
   
   <Center><button class="btn btn-warning" style="text-decoration:none"> <a href="logout.php">Log out</a> </button></Center>
