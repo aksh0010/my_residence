@@ -176,7 +176,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <div class="form-group col-md-6">
           <label for="inputZip">Place num for Student</label>
-          <input type="number" class="form-control" id="PLACE_NUM" placeholder="eg: 10/11" />
+          <input type="text" class="form-control" id="PLACE_NUM" placeholder="eg: H10 \ F12" />
 
         </div>
       </div>
