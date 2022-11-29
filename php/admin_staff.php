@@ -45,7 +45,7 @@
     die("Connection error " . mysqli_connect_error());
   }
   // User information 
-  $sqlq = "SELECT staff_num, staff_fname, staff_lname, position, place_num FROM HOSTEL_STAFF 
+  $sqlq = "SELECT staff_num, staff_fname, staff_lname, position, loc FROM HOSTEL_STAFF 
             WHERE staff_num =" . $id . ";";
   $result = $conn->query($sqlq);
   $num = mysqli_num_rows($result);
@@ -61,13 +61,13 @@ echo "<center class=". "navbar navbar-light bg-light"."> <h1>Account no ".$id ."
 </center>";
 echo"<hr><br> <p> Personal Information</p>";
   echo "<table>";
-  echo "<tr><th>Staff ID</th><th>Staff First Name</th><th>Staff Last Name</th><th>Position</th><th>Place Number</th></tr>";
+  echo "<tr><th>Staff ID</th><th>Staff First Name</th><th>Staff Last Name</th><th>Position</th><th>Location</th></tr>";
   foreach ($resArr as $std) {
     echo "<tr><td> " . $std['staff_num'] . " </td>" .
       "<td> " . $std['staff_fname'] . " </td>" .
       "<td> " . $std['staff_lname'] . " </td>" .
       "<td> " . $std['position'] . " </td>" .
-      "<td> " . $std['place_num'] . " </td></tr>";
+      "<td> " . $std['loc'] . " </td></tr>";
   }
   echo "</table>";
   // Inspection details 

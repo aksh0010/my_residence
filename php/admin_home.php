@@ -300,8 +300,9 @@ if (!$_SESSION['patel4d1_My_residence']) {
   <hr>
   <button class="btn btn-warning" style="text-decoration:none"> <a href="staff_signup.html">Register Staff</a> </button>
   <br><button class="btn btn-warning" style="text-decoration:none"> <a href="student_signup.html">Register Student</a> </button>
-  <br>
   
+  <br><button class="btn btn-warning" style="text-decoration:none"> <a href="advisor_signup.html">Register Advisor</a> </button>
+  <br>
   <Center><button class="btn btn-warning" style="text-decoration:none"> <a href="logout.php">Log out</a> </button></Center>
 
 </div>
