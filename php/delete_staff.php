@@ -1,6 +1,6 @@
 
 <?php
-include "admin_staff.php";
+// include "admin_staff.php";
 $insert = false;
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $host = "localhost";

@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     $adv_id = $_POST['advisor_id'];
     // $query1 = "DELETE FROM STUDENT_ADVISOR WHERE advisor_id = ".$adv_id .";";
-    $query1 = "DELETE FROM `STUDENT_ADVISOR` WHERE advisor_id =" . $adv_id . " ;";
+    $query1 = "DELETE FROM `STUDENT_ADVISOR` WHERE advisor_id =" . $adv_id . ";";
     
     if ($conn->query($query1) == true) {
        
