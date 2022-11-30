@@ -176,7 +176,7 @@ if (!$_SESSION['patel4d1_My_residence']) {
       <!-- !!  Advisor Login  -->
       <div class="container2">
         <a href="#" class="list-group-item list-group-item-action"><button onclick="document.getElementById('id01').style.display='block'" style="width: auto">
-            Advisor
+            Search Advisor
           </button>
 
           <div id="id01" class="modal">
@@ -215,7 +215,7 @@ if (!$_SESSION['patel4d1_My_residence']) {
       <br>
       <div class="container2">
         <a href="#" class="list-group-item list-group-item-action"><button onclick="document.getElementById('id02').style.display='block'" style="width: auto">
-            Student
+           Search Student
           </button>
 
           <div id="id02" class="modal">
@@ -256,7 +256,7 @@ if (!$_SESSION['patel4d1_My_residence']) {
       <div class="container2">
         <a href="#" class="list-group-item list-group-item-action"><button onclick="document.getElementById('id03').style.display='block'" style="width: auto">
             <!-- !!  Staff Login  -->
-            Staff
+            Search Staff
           </button>
 
           <div id="id03" class="modal">
