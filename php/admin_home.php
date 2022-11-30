@@ -43,7 +43,7 @@ if (!$_SESSION['patel4d1_My_residence']) {
     border: none;
     cursor: pointer;
     width: 100%;
-    radius: 10px;
+    border-radius: 10px;
   }
 
   button:hover {
@@ -303,6 +303,7 @@ if (!$_SESSION['patel4d1_My_residence']) {
     <br><button class="btn btn-warning" style="text-decoration:none"> <a href="advisor_signup.html">Register Advisor</a> </button>
     <br>
     <br><button class="btn btn-warning" style="text-decoration:none"> <a href="update_student.html">Update Student</a> </button>
+    <br><button class="btn btn-warning" style="text-decoration:none"> <a href="update_staff.html">Update Student</a> </button>
     <Center><button class="btn btn-warning" style="text-decoration:none"> <a href="logout.php">Log out</a> </button></Center>
 
   </div>
