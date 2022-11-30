@@ -82,9 +82,7 @@
   </div>
   </div>
   <br>
-  <div>
-    <Center><button class="btn btn-info" style="text-decoration:none"> <a href="delete_advisor.php">Delete Data</a> </button></Center>
-  </div>
+ 
 </body>
 
 </html>

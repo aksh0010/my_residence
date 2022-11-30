@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete HomePage</title>
+    <style>
+        .btn {
+            padding-right: 500px;
+            padding-left: 500px;
+        }
+    </style>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</head>
+
+<body style="text-align: center">
+    <!-- div for nav bar if needed -->
+    <div>
+        <h1 style="text-align: center">
+            <b><i>Delete Form</i></b>
+        </h1>
+    </div>
+    <br /><br />
+    <!-- Div for deleting advisore ID -->
+    <div>
+        <form style="padding-left: 500px" action="advisor_signup.php" method="POST">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Advisor Number </label>
+                    <input type="number" class="form-control" name="advisor_id" placeholder="Enter Advisor ID" />
+                </div>
+              
+            </div>
+            <br />
+            <button type="submit" id="btn1" id="btn" class="btn btn-danger">Delete Advisor</button>
+            <br />
+        </form>
+    </div>
+    <!-- Div for deleting staff  -->
+    <div>
+        <form style="padding-left: 500px" action="delete_staff.php" method="POST">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Staff ID </label>
+                    <input type="number" class="form-control" name="staff_num" placeholder="Enter staff ID" />
+                </div>
+              
+            </div>
+            <br />
+            <button type="submit" id="btn1" id="btn" class="btn btn-danger">Delete Staff</button>
+            <br />
+        </form>
+    </div>
+      <!-- Div for deleting student  -->
+      <div>
+        <form style="padding-left: 500px" action="delete_student.php" method="POST">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Student ID </label>
+                    <input type="number" class="form-control" name="advisor_id" placeholder="Enter student ID" />
+                </div>
+              
+            </div>
+            <br />
+            <button type="submit" id="btn1" id="btn" class="btn btn-danger">Delete Student</button>
+            <br /><br />
+            <button type="submit" id="btn2" id="btn" class="btn btn-success">
+                <a href="admin_login.php" style="color: white;"> Go Back</a>
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>

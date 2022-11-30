@@ -302,9 +302,19 @@ if (!$_SESSION['patel4d1_My_residence']) {
   <br><button class="btn btn-warning" style="text-decoration:none"> <a href="student_signup.html">Register Student</a> </button>
   
   <br><button class="btn btn-warning" style="text-decoration:none"> <a href="advisor_signup.html">Register Advisor</a> </button>
+  
+  <br><button class="btn btn-warning" style="text-decoration:none"> <a href="delete_homepage.html">Delete Data</a> </button>
+  
   <br>
   <Center><button class="btn btn-warning" style="text-decoration:none"> <a href="logout.php">Log out</a> </button></Center>
+  <form action="delete_advisor.php" method="POST">
+    <!-- <button type="submit" id="btn1" id="btn" class="btn btn-primary">Register</button> -->
+    <div>
 
+      
+    </div>
+   
+  </form>
 </div>
 </body>
 
