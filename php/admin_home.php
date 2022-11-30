@@ -43,7 +43,7 @@ if (!$_SESSION['patel4d1_My_residence']) {
     border: none;
     cursor: pointer;
     width: 100%;
-    border-radius: 10px;
+    radius: 10px;
   }
 
   button:hover {
@@ -165,137 +165,133 @@ if (!$_SESSION['patel4d1_My_residence']) {
 </style>
 
 <body>
-  <div class='container'>
-    <!-- !!  My Residence Login  -->
-    <div class="list-group ">
-      <br><br>
-      <h1 style="text-align: center">Welcome Admin</h1>
-      <br><br>
-      <!-- !!  add above this text-bg-warning p-3 to make it yellow -->
+<div class='container'>
+  <!-- !!  My Residence Login  -->
+  <div class="list-group ">
+    <br><br>
+    <h1 style="text-align: center">Welcome Admin</h1>
+    <br><br>
+    <!-- !!  add above this text-bg-warning p-3 to make it yellow -->
 
-      <!-- !!  Advisor Login  -->
-      <div class="container2">
-        <a href="#" class="list-group-item list-group-item-action"><button onclick="document.getElementById('id01').style.display='block'" style="width: auto">
-            Advisor
-          </button>
+    <!-- !!  Advisor Login  -->
+    <div class= "container2">
+    <a href="#" class="list-group-item list-group-item-action"><button onclick="document.getElementById('id01').style.display='block'" style="width: auto">
+        Advisor
+      </button>
+      
+      <div id="id01" class="modal">
+        <form class="modal-content animate" action="./admin_advisor.php" method="POST">
 
-          <div id="id01" class="modal">
-            <form class="modal-content animate" action="./admin_advisor.php" method="POST">
+          <div class="container">
+            <label for="uname"><b>Advisor ID</b></label>
+            <input type="text" placeholder="Enter Advisor ID" name="id" required />
 
-              <div class="container">
-                <label for="uname"><b>Advisor ID</b></label>
-                <input type="text" placeholder="Enter Advisor ID" name="id" required />
-
-                <button type="submit">Go</button>
-              </div>
-
-              <div class="container" style="background-color: #f1f1f1">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">
-                  Cancel
-                </button>
-                <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
-              </div>
-            </form>
+            <button type="submit">Go</button>
           </div>
 
-          <script>
-            // Get the modal
-            var modal = document.getElementById("id01");
-
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-              if (event.target == modal) {
-                modal.style.display = "none";
-              }
-            };
-          </script>
-        </a>
+          <div class="container" style="background-color: #f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">
+              Cancel
+            </button>
+            <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
+          </div>
+        </form>
       </div>
-      <!-- !!  Student Login  -->
-      <br>
-      <div class="container2">
-        <a href="#" class="list-group-item list-group-item-action"><button onclick="document.getElementById('id02').style.display='block'" style="width: auto">
-            Student
-          </button>
+      
+      <script>
+        // Get the modal
+        var modal = document.getElementById("id01");
 
-          <div id="id02" class="modal">
-            <form class="modal-content animate" action="./admin_student.php" method="POST">
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        };
+      </script>
+    </a>
+    </div>
+    <!-- !!  Student Login  -->
+    <br>
+    <div class= "container2">
+    <a href="#" class="list-group-item list-group-item-action"><button onclick="document.getElementById('id02').style.display='block'" style="width: auto">
+        Student
+      </button>
+
+      <div id="id02" class="modal">
+        <form class="modal-content animate" action="./admin_student.php" method="POST">
 
 
-              <div class="container">
-                <label for="uname"><b>Student ID</b></label>
-                <input type="text" placeholder="Enter Student Id" name="std_id" required />
+          <div class="container">
+            <label for="uname"><b>Student ID</b></label>
+            <input type="text" placeholder="Enter Student Id" name="std_id" required />
 
-                <button type="submit">Go</button>
+            <button type="submit">Go</button>
 
-              </div>
-
-              <div class="container" style="background-color: #f1f1f1">
-                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">
-                  Cancel
-                </button>
-                <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
-              </div>
-            </form>
           </div>
 
-          <script>
-            // Get the modal
-            var modal = document.getElementById("id02");
-
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-              if (event.target == modal) {
-                modal.style.display = "none";
-              }
-            };
-          </script>
-        </a>
+          <div class="container" style="background-color: #f1f1f1">
+            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">
+              Cancel
+            </button>
+            <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
+          </div>
+        </form>
       </div>
-      <br>
-      <div class="container2">
-        <a href="#" class="list-group-item list-group-item-action"><button onclick="document.getElementById('id03').style.display='block'" style="width: auto">
-            <!-- !!  Staff Login  -->
-            Staff
-          </button>
 
-          <div id="id03" class="modal">
-            <form class="modal-content animate" action="./admin_staff.php" method="POST">
+      <script>
+        // Get the modal
+        var modal = document.getElementById("id02");
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        };
+      </script>
+    </a>
+    </div>
+    <br>
+    <div class= "container2">
+    <a href="#" class="list-group-item list-group-item-action"><button onclick="document.getElementById('id03').style.display='block'" style="width: auto">
+        <!-- !!  Staff Login  -->
+        Staff
+      </button>
+
+      <div id="id03" class="modal">
+        <form class="modal-content animate" action="./admin_staff.php" method="POST">
 
 
-              <div class="container">
-                <label for="uname"><b>Staff ID</b></label>
-                <input type="text" placeholder="Enter Staff Id" name="staff_num" required />
+          <div class="container">
+            <label for="uname"><b>Staff ID</b></label>
+            <input type="text" placeholder="Enter Staff Id" name="staff_num" required />
 
-                <button type="submit">Go</button>
+            <button type="submit">Go</button>
 
-              </div>
-
-              <div class="container" style="background-color: #f1f1f1">
-                <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">
-                  Cancel
-                </button>
-                <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
-              </div>
-            </form>
           </div>
 
-          <script>
-            // Get the modal
-            var modal = document.getElementById("id03");
-
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-              if (event.target == modal) {
-                modal.style.display = "none";
-              }
-            };
-          </script>
-        </a>
+          <div class="container" style="background-color: #f1f1f1">
+            <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">
+              Cancel
+            </button>
+            <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
+          </div>
+        </form>
       </div>
-      <br>
-      <!-- !! Back to home page  -->
 
+      <script>
+        // Get the modal
+        var modal = document.getElementById("id03");
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        };
+      </script>
+    </a>
     </div>
     <br>
     <!-- !! Back to home page  -->
@@ -306,9 +302,19 @@ if (!$_SESSION['patel4d1_My_residence']) {
   <br><button class="btn btn-warning" style="text-decoration:none"> <a href="student_signup.html">Register Student</a> </button>
   
   <br><button class="btn btn-warning" style="text-decoration:none"> <a href="advisor_signup.html">Register Advisor</a> </button>
+  
+  <br><button class="btn btn-warning" style="text-decoration:none"> <a href="delete_homepage.html">Delete Data</a> </button>
+  
   <br>
   <Center><button class="btn btn-warning" style="text-decoration:none"> <a href="logout.php">Log out</a> </button></Center>
+  <form action="delete_advisor.php" method="POST">
+    <!-- <button type="submit" id="btn1" id="btn" class="btn btn-primary">Register</button> -->
+    <div>
 
+      
+    </div>
+   
+  </form>
 </div>
 </body>
 
