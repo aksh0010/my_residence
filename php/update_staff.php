@@ -20,10 +20,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $city = $_POST['city'];
   $p_code = $_POST['postalcode'];
   
-  $update = "UPDATE `HOSTEL_STAFF` SET `STAFF_FNAME`='$fname',`STAFF_LNAME`='$lname',`DOB`='$dob',
-  `GENDER`='$gender',`POSITION`='$position',`LOC`='$loc',
-  `STREET`='$street',`POSTALCODE`='$p_code',`CITY`='$city',`PLACE_NUM`='$staff_num' 
-  WHERE `STAFF_NUM`='[value-1]';";
+  $update = "UPDATE HOSTEL_STAFF SET STAFF_FNAME='$fname',STAFF_LNAME='$lname',DOB='$dob',
+  GENDER='$gender',POSITION='$position',LOC='$loc',
+  STREET='$street',POSTALCODE='$p_code',CITY='$city' 
+  WHERE STAFF_NUM=".$staff_num.";";
 
   if ($conn->query($update) == true) {
     $insert = true;

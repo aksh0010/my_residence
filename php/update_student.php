@@ -25,9 +25,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $adv_id = $_POST['ADVISOR_ID'];
   $place_num = $_POST['PLACE_NUM'];
 
-  $update_query = "UPDATE `STUDENT` SET `STD_FNAME`='$fname',`STD_LNAME`='$lname',`STREET`='$street',`CITY`='$city',
-  `POSTAL_CODE`='$p_code',`DOB`='$dob',`GENDER`='$gender',`STUDENT_CATEGORY`='$s_category',`NATIONALITY`='$nationality',
-  `CURRENT_STATUS`='$c_status',`COURSE_ENROLLED`='$c_enrolled',`ADVISOR_ID`='$adv_id',`PLACE_NUM`='$place_num' WHERE `STD_ID`='$std_id',";
+  $update_query = "UPDATE STUDENT SET STD_FNAME='$fname',STD_LNAME='$lname',STREET='$street',CITY='$city',
+  POSTAL_CODE='$p_code',DOB='$dob',GENDER='$gender',STUDENT_CATEGORY='$s_category',NATIONALITY='$nationality',
+  CURRENT_STATUS='$c_status',COURSE_ENROLLED='$c_enrolled',ADVISOR_ID='$adv_id',PLACE_NUM='$place_num' WHERE STD_ID=".$std_id.";";
   
   if ($conn->query($update_query) == true) {
 
