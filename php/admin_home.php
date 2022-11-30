@@ -43,7 +43,7 @@ if (!$_SESSION['patel4d1_My_residence']) {
     border: none;
     cursor: pointer;
     width: 100%;
-    radius: 10px;
+    border-radius: 10px;
   }
 
   button:hover {
