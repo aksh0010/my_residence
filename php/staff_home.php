@@ -115,7 +115,7 @@ if (!$_SESSION['patel4d1_My_residence'] && !$_SESSION['staff_num']) {
 
 
     <br>
-    <Center><button class="btn btn-warning" style="text-decoration:none"> <a href="logout.php">Log out</a> </button></Center>
+    <Center><button class="btn btn-danger" style="text-decoration:none"> <a href="logout.php">Log out</a> </button></Center>
   </div>
 </body>
 

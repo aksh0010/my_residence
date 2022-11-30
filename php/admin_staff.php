@@ -101,7 +101,7 @@
 
     <br>
 
-    <Center> <button class="btn btn-info" style="text-decoration:none"> <a href="admin_home.php">Go back</a> </button></Center>
+    <Center> <button class="btn btn-secondary" style="text-decoration:none"> <a href="admin_home.php">Go back</a> </button></Center>
 
   </div>
   <br>
